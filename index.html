@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DrugCompare AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💊 DrugCompare AI</h1>
+        <p>AI-Assisted Drug Monograph Comparison</p>
+    </header>
+
+    <main>
+
+        <section class="input-section">
+
+            <div class="drug-box">
+
+                <h2>Drug 1</h2>
+
+                <input
+                    type="text"
+                    id="drug1Name"
+                    placeholder="Enter drug name"
+                >
+
+                <textarea
+                    id="drug1Text"
+                    placeholder="Paste Drug 1 monograph here..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="drug-box">
+
+                <h2>Drug 2</h2>
+
+                <input
+                    type="text"
+                    id="drug2Name"
+                    placeholder="Enter drug name"
+                >
+
+                <textarea
+                    id="drug2Text"
+                    placeholder="Paste Drug 2 monograph here..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+        <button id="compareBtn">
+            🤖 Compare With AI
+        </button>
+
+
+        <section id="results">
+
+            <h2>📊 Comparison Results</h2>
+
+            <div class="result-card">
+
+                <h3>📌 Indications</h3>
+
+                <div id="indicationsResult">
+                    Results will appear here.
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <h3>⚠️ Precautions</h3>
+
+                <div id="precautionsResult">
+                    Results will appear here.
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <h3>🤖 AI Summary</h3>
+
+                <div id="summaryResult">
+                    Results will appear here.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Educational use only. Always verify information against
+            the original approved drug monograph.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
